@@ -13,4 +13,17 @@ public class DataInputManager : MonoBehaviour
         Debug.Log("hola " + txtUserName.text);
     }
 
+    public void  ShowDouble ()
+    {
+        if (txtUserName.text != "")
+        {
+            Debug.Log(int.Parse(txtUserName.text) * 2);
+        }
+
+        else 
+        {
+            Debug.LogError("invalid input: empty");
+        }
+    }
+
 }
